@@ -1,0 +1,268 @@
+// MOSBAG STYLE
+
+
+.turquoise{     color: #1abc9c;}
+.green-sea{     color: #16a085;}
+
+.emerald{      color: #2ecc71;}
+.nephritis{     color: #27ae60;}
+
+.peter-river{   color: #3498db;}
+.belize-hole{   color: #2980b9;}
+
+.amethyst{      color: #9b59b6;}
+.wisteria{      color: #8e44ad;}
+
+.wet-asphalt{   color: #34495e;}
+.midnight-blue{ color: #2c3e50;}
+
+.sun-flower{    color: #f1c40f;}
+.orange{        color: #f39c12;}
+
+.carrot{        color: #e67e22;}
+.pumpkin{       color: #d35400;}
+
+.alizarin{      color: #e74c3c;}
+.pomegranate{   color: #c0392b;}
+
+.clouds{        color: #ecf0f1;}
+.silver{        color: #bdc3c7;}
+
+.concrete{      color: #95a5a6;}
+.asbestos{      color: #7f8c8d;}
+
+// Main Colors
+// -------------------------
+.base{             color: @wet-asphalt;}
+.firm{             color: @amethyst;}
+
+.gray{             color: @concrete;}
+.lightgray{        color: @silver;}
+.inverse{          color: white;}
+
+.success{          color: @emerald;}
+.danger{           color: @alizarin;}
+.warning{          color: @sun-flower;}
+.info{             color: @peter-river;}
+
+.link-color{       color: @wisteria;}
+.link-hover-color{ color: @amethyst;}
+
+// background images
+@media (min-width: 768px) {
+	
+	body { 
+	  background: url(../images/main_bg.jpg) no-repeat center center fixed!important; 
+	  -webkit-background-size: cover!important;
+	  -moz-background-size: cover!important;
+	  -o-background-size: cover!important;
+	  background-size: cover!important;
+	}
+}
+
+@media (max-width: 767px) {
+	body {
+		background: url(../images/wild_oliva/wild_oliva.png) repeat;
+	}
+}
+
+// modal shit that i probably won't use
+body.modal-open {
+	overflow: hidden;
+}
+
+.modal {
+	max-height: 90%;
+}
+
+.modalheader {
+	color: @amethyst;
+}
+
+// mobile spacer
+
+.mobile-spacer {
+	height: 100px;
+}
+
+// mobile logo
+
+.mosbaglogo.visible-phone {
+	img {
+		width: 200px;
+		height: 200px;
+	}
+}
+
+// style the nav
+.nav-mobile {
+	position: fixed;
+
+	.navbar-inner {
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+	}
+}
+
+.navbar .brand {
+	padding-right: 0px;
+}
+
+// decrease space between nav dropdown items on phone+tablet
+
+@media (max-width: 767px) {
+	ul.nav.pull-right>li>a {
+		padding: 10px 20px;
+	}
+}
+
+// .bubble {
+// 	background-color: @amethyst;
+// 	width: 100%;
+// 	height: calc();
+// 	text-align: center;
+// 	border-radius: 50%;
+// }
+
+// carousel shit
+
+.carousel {
+	border: 3px solid @wisteria;
+	padding: 10px;
+}
+
+// style the food .menu section
+.menu {
+	color: white;
+	text-align: center;
+	
+	.hero-unit {
+		background-color: fadeout(@amethyst, 10%);
+	}
+
+	.accordion {
+		margin-top: 10px;
+	}
+
+	.accordion-toggle {
+		background-color: fadeout(white, 10%);
+		color: @amethyst;
+	}
+
+	.accordion-body {
+		background-color: fadeout(white, 10%);
+		color: @base;
+	}
+}
+
+.menu-table>thead {
+	font-size: 2em;
+	font-weight: 700;
+	text-align: center;
+}
+
+a.accordion-toggle {
+	text-decoration: none;
+	color: @base;
+	font-size: 1.7em;
+	font-weight: 800;
+}
+
+// style the .wells
+
+.well {
+	background-color: fadeout(white, 10%);
+}
+
+
+// style the .hours section
+.hours {
+	background-color: fadeout(@turquoise, 10%);
+	border-radius: 10px;
+	color: white;
+	margin-bottom: 20px;
+
+	.row>.span12>h1 {
+		background: @green-sea;
+	} 
+}
+
+// style the .about section
+
+.about {
+	.hero-unit {
+		background-color: fadeout(@turquoise, 10%);
+		color: white;
+		text-align: center;
+	}
+
+	.well {
+		border: none;
+		color: @base;
+	}
+}
+
+// style the .praise section
+
+.praise {
+	.hero-unit {
+		background-color: fadeout(@amethyst, 10%);
+		color: white;
+		text-align: center;
+	}
+	.well>.lead {
+		background-color: fadeout(@amethyst, 10%);
+		color: white;
+		padding: 10px;
+		border-radius: 5px;
+	}
+}
+
+// style the .employment section
+
+.employment {
+	.hero-unit {
+		background-color: fadeout(@turquoise, 10%);
+		text-align: center;
+		color: white;
+	}
+}
+
+//style the .contact section
+
+.contact {
+	.hero-unit {
+		background-color: fadeout(@amethyst, 10%);
+		text-align: center;
+		color: white;
+	}
+}
+
+// style the .mosbaglogo
+
+.mosbaglogo {
+	img {
+		margin-bottom: 20px;
+		border-radius: 46%;
+		padding: 30px;
+	}
+}
+
+.mosbaglogo-top {
+	img {
+		margin-bottom: 20px;
+		border-radius: 46%;
+		padding: 30px;
+	}
+}
+
+
+// hide all the containers
+
+.menu,
+.about,
+.praise,
+.employment,
+.contact {
+	display: none;
+}
